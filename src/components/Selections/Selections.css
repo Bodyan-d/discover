@@ -1,0 +1,37 @@
+.menu {
+    position: relative;
+    padding: 10px 0;
+}
+
+.menu-line {
+    position: absolute;
+    top: 0;
+    left: -5%;
+    width: 100vw;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(27.1828px);
+}
+
+.menu-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-button {
+    background: linear-gradient(202.17deg, #ff00d6 8.58%, #ff4d00 91.42%);
+    border-radius: 40px;
+    border: none;
+    padding: 15px 28px 12px;
+}
+
+.menu-item {
+    display: inline;
+}
+
+.menu-link {
+    padding: 12px;
+}
+
+.menu-icon {}
