@@ -2,6 +2,7 @@
     "name": "discover",
     "version": "0.1.0",
     "private": true,
+    "homepage": "https://Bodyan-d.github.io/discover",
     "dependencies": {
         "normalize.css": "^8.0.1",
         "react": "^18.1.0",
