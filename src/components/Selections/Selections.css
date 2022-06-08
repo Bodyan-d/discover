@@ -1,13 +1,18 @@
 .menu {
-    position: relative;
+    position: fixed;
+    bottom: 0;
+    left: 0;
     padding: 10px 0;
+    width: 100%;
+    background-color: #fff;
 }
 
 .menu-line {
     position: absolute;
     top: 0;
     left: -5%;
-    width: 100vw;
+    width: 200vw;
+    overflow: hidden;
     height: 1px;
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(27.1828px);
@@ -15,7 +20,7 @@
 
 .menu-btns {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -23,7 +28,7 @@
     background: linear-gradient(202.17deg, #ff00d6 8.58%, #ff4d00 91.42%);
     border-radius: 40px;
     border: none;
-    padding: 15px 28px 12px;
+    padding: 13px 28px 12px;
 }
 
 .menu-item {

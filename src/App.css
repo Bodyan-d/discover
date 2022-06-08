@@ -1,6 +1,7 @@
 .App {
+    position: relative;
     padding: 32px 15px 0px 15px;
-    text-align: center;
+    text-align: left;
 }
 
 h1 {
@@ -24,11 +25,12 @@ li {
     font-weight: 400;
     font-size: 36px;
     line-height: 40px;
-    display: flex;
     align-items: center;
     letter-spacing: -0.015em;
     color: #000000;
     margin-bottom: 32px;
+    width: 100%;
+    display: inline;
 }
 
 body {
