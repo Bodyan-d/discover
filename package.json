@@ -8,6 +8,7 @@
         "@testing-library/react": "^11.2.7",
         "@testing-library/user-event": "^12.8.3",
         "gatsby-plugin-netlify-cms": "^4.0.0",
+        "husky": "^8.0.1",
         "netlify-cms-app": "^2.9.7",
         "normalize.css": "^8.0.1",
         "react": "^18.1.0",
@@ -23,6 +24,7 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
+        "prepare": "husky install",
         "predeploy": "npm run build",
         "deploy": "netlify deploy -p"
     },
