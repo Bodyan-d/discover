@@ -24,7 +24,7 @@ function BrowseAll() {
 				setData(prev => [...prev, {}]);
 			}
 			setData(prev => [...prev, ...images.hits]);
-
+			setTotal(page);
 			setPage(prev => prev + 1);
 		}
 
