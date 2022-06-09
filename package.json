@@ -29,7 +29,8 @@
         "eject": "react-scripts eject",
         "prepare": "husky install",
         "predeploy": "npm run build",
-        "deploy": "netlify deploy -p"
+        "deployN": "netlify deploy -p",
+        "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
         "extends": [
