@@ -7,7 +7,8 @@ function BrowseAll() {
 	const [data, setData] = useState([]);
 	const [page, setPage] = useState(1);
 	const [fetching, setFetching] = useState(true);
-	const [total, setTotal] = useState(0);
+
+	console.log(data);
 
 	useEffect(() => {
 		document.addEventListener('scroll', handleScroll);
@@ -20,11 +21,12 @@ function BrowseAll() {
 	useEffect(() => {
 		async function fetch(page) {
 			const images = await fetchImages(page);
-			if (total === images.totalHits) {
-				setData(prev => [...prev, {}]);
+
+			if (data.length >= images.totalHits) {
+				return;
 			}
 			setData(prev => [...prev, ...images.hits]);
-			setTotal(page);
+
 			setPage(prev => prev + 1);
 		}
 
@@ -41,7 +43,7 @@ function BrowseAll() {
 		if (
 			target.documentElement.scrollHeight -
 				(target.documentElement.scrollTop + window.innerHeight) <
-			600
+			1000
 		) {
 			setFetching(true);
 		}
@@ -64,13 +66,14 @@ function BrowseAll() {
 					columnClassName='my-masonry-grid_column'
 				>
 					{data &&
-						data.map(({ webformatURL, width, height, user, id }) => {
+						data.map(({ previewURL, width, height, user, id }) => {
 							return (
 								<li key={Math.random() + parseInt(id)}>
 									{' '}
 									<img
+										loading='eager'
 										className='item-image'
-										src={webformatURL}
+										src={previewURL}
 										alt={user}
 										width={width}
 									/>

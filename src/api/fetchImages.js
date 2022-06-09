@@ -1,7 +1,7 @@
 const fetchImages = async page => {
 	try {
 		const response = await fetch(
-			`https://pixabay.com/api/?key=21922241-ac53faccd58a6508b64890669&page=${page}&per_page=30`
+			`https://pixabay.com/api/?key=21922241-ac53faccd58a6508b64890669&page=${page}&per_page=30&orientation=vertical`
 		);
 		const images = await response.json();
 
