@@ -57,13 +57,6 @@
     display: block; */
 }
 
-.hidden {
-    position: absolute;
-    visibility: hidden;
-    width: 0;
-    height: 0;
-}
-
 .my-masonry-grid {
     display: -webkit-box;
     /* Not needed if autoprefixing */

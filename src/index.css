@@ -1,4 +1,5 @@
 @import './App.css';
 @import './components/DailyNews/DailyNews.css';
 @import './components/BrowseAll/BrowseAll.css';
-@import './components//Selections/Selections.css';
+@import './components/Selections/Selections.css';
+@import './components/Search/Search.css';

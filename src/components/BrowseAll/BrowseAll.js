@@ -1,7 +1,7 @@
 import React from 'react';
 import Masonry from 'react-masonry-css';
 import { useEffect, useState } from 'react';
-import fetchImages from '../../api/fetchImages';
+import { fetchImages } from '../../api/fetchImages';
 
 function BrowseAll() {
 	const [data, setData] = useState([]);
@@ -37,6 +37,7 @@ function BrowseAll() {
 		setFetching(false);
 
 		return () => {};
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [fetching]);
 
 	function handleScroll({ target }) {
@@ -69,7 +70,6 @@ function BrowseAll() {
 						data.map(({ previewURL, width, height, user, id }) => {
 							return (
 								<li key={Math.random() + parseInt(id)}>
-									{' '}
 									<img
 										loading='eager'
 										className='item-image'
