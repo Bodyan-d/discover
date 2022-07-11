@@ -1,6 +1,5 @@
-import DailyNews from '../DailyNews';
-import BrowseAll from '../BrowseAll';
-import Selections from '../Selections';
+import DailyNews from '../DailyNews/DailyNews';
+import BrowseAll from '../BrowseAll/BrowseAll';
 
 function Home() {
 	return (
